@@ -1,14 +1,42 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Desktop.
+# Where Can I Watch
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+**Where Can I Watch**, bir **Compose Multiplatform** projesidir. Tek kod tabanıyla **Android**, **iOS** ve **Desktop** platformlarında çalışacak şekilde tasarlanmıştır. Uygulama, kullanıcıların aradıkları film veya dizinin **hangi abonelik platformlarında** mevcut olduğunu gösterir. Ayrıca **ana sayfada** çeşitli film/dizi önerileri sunar. Bu proje **deneysel** amaçla hazırlanmıştır.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+> **Not:** iOS sürümü teorik olarak desteklense de, Mac ortamım olmadığı için **test edilememiştir**. **Android** ve **Desktop** sürümleri ise sorunsuz çalışmaktadır.
+
+---
+
+## Özellikler
+
+1. **Kapsamlı Platform Desteği**  
+   - **Android**: Dinamik tema (Dynamic Color) desteği ve **ModalNavigationDrawer** kullanımı.  
+   - **Desktop**: Büyük ekranlar için **dismissibleNavigationDrawer**, bir **LazyColumn** için kaydırma çubuğu (scrollbar) ve **LazyRow** için sağ/sol **kaydırma okları** (Netflix benzeri yatay liste).  
+   - **iOS**: Compose Multiplatform’un iOS desteği teorik olarak mevcut, ancak test edilmemiştir.
+
+2. **API Entegrasyonu**  
+   - [`Streaming Availability`](https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability)  
+   - Kullanıcı, film veya dizi araması yaptığında bu API üzerinden **hangi platformlarda** (Netflix, Amazon Prime, vb.) bulunduğu gösterilir.  
+   - Ana sayfada rastgele **öneriler** sunulur.
+
+3. **Kullanılan Teknolojiler**  
+   - **Ktor Client**: HTTP istekleri ve veri alma.  
+   - **Koin**: Dependency Injection yönetimi.  
+   - **Coil**: Görsel yükleme ve önbellekleme.  
+   - **Material 3**: Güncel tasarım yönergelerine uygun arayüz bileşenleri.  
+   - **Coroutines & Flow**: Asenkron veri işleme ve reaktif akışlar.  
+
+4. **Deneysel Proje**  
+   - Kod ve tasarım **deneysel** amaçla oluşturulmuştur.  
+   - Geliştirmeye ve iyileştirmeye açıktır.
+
+---
+
+## Uygulama Ekran Görüntüleri (GIF)
+
+### Android Kullanımı
+![android-gif](https://github.com/user-attachments/assets/d15b7562-b3d7-4bfb-825a-dd6cf5fe4f1a) 
 
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+### Desktop Kullanımı
+![desktop-gif-copy](https://github.com/user-attachments/assets/90a3a50d-64f2-4924-a9f7-69ca29a800de)
+
