@@ -38,5 +38,5 @@
 
 
 ### Desktop Kullanımı
-![desktop-gif-copy](https://github.com/user-attachments/assets/90a3a50d-64f2-4924-a9f7-69ca29a800de)
+![desktop-gif-2](https://github.com/user-attachments/assets/1dec5ed7-9516-42bf-bbf3-e77dadd46d19)
 
