@@ -8,11 +8,12 @@
 ## Uygulama Ekran Görüntüleri (GIF)
 
 ### Android Kullanımı
-![android-gif](https://github.com/user-attachments/assets/d15b7562-b3d7-4bfb-825a-dd6cf5fe4f1a) 
+![android-gif](https://github.com/user-attachments/assets/ce2e4e79-68b4-4f64-89a4-60c8615b3e2d)
 
 
 ### Desktop Kullanımı
-![desktop-gif-2](https://github.com/user-attachments/assets/1dec5ed7-9516-42bf-bbf3-e77dadd46d19)
+![desktop-gif-2](https://github.com/user-attachments/assets/b1c4e6f7-460f-4a0a-a8b5-d362aab286c3)
+
 ---
 
 ## Özellikler
